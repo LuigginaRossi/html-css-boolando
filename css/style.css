@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid gray;
 }
 
 header{
@@ -13,7 +12,11 @@ header{
     padding: 0.5rem 0;
 }
 
-header nav li{
+main{
+    padding: 5rem 0;
+}
+
+li{
     list-style: none;  
 }
 
@@ -42,12 +45,11 @@ a{
 .container-card{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;  
-    padding-top: 5rem;  
+    gap: 1rem;    
 }
 
 .card{
-    width: 30%;
+    width: calc(33.3333% - 2rem/3);
 }
 
 .card img{
@@ -64,18 +66,38 @@ a{
     color: white;
     font-size: 0.8rem;
     font-weight: bold;
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.discount{
+    background-color: #ff0000;
+    padding: 0.2rem 0.3rem;
+}
+.sustainable{
+    background-color: #008000;
     padding: 0.2rem 0.3rem;
 }
 
 .hover-img{
-    position: absolute;
-    top:0;
-    left: 0;
+    width: 100%;
 }
 
-/* .card:hover .hover-img{
-    z-index: 1;
-} */
+.card .hover-img{
+    display: none;
+}
+
+.card .img-card{
+    display: block;
+}
+
+.card:hover .hover-img{
+    display: block;
+}
+
+.card:hover .img-card{
+    display: none;
+}
 
 .heart{
     position: absolute;
@@ -91,19 +113,15 @@ a{
     opacity: 1;
 }
 
-.discount{
-    background-color: #ff0000;
-}
-.sustainable{
-    background-color: #008000;
-    left: 16%;
+footer{
+    background-color: #1a1a1a;
+    color: white;
 }
 
-/* quando la card è in hover applica questo  */
-/* img:hover{
-   display: none;
-   background-image: url(../img/1b.webp);
-   width: 100%;
-} */
+.container-info-leg{
+    column-gap: 0.5rem;
+}
 
-/* card position relative + :hover con z-ind:1 */
+footer .container{
+    justify-content: space-between;
+}
