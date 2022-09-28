@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+header{
+    background-color: #ff6900 ;
+    color: white;
+    position: fixed;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+header nav li{
+    list-style: none;  
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.flex.nav{
+    justify-content: space-between;
+}
+.logo{
+    width: 8rem;
+    vertical-align: middle;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 920px;
+    margin: 0 auto;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;  
+    padding-top: 5rem;  
+}
+
+.card{
+    width: 30%;
+}
+
+.card img{
+    width: 100%;
+
+}
+
+
+/* quando la card è in hover applica questo  */
+/* .card:hover img{
+   display: none;
+   background-image: url(../img/1b.webp);
+} */
