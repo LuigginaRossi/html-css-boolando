@@ -67,6 +67,16 @@ a{
     padding: 0.2rem 0.3rem;
 }
 
+.hover-img{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/* .card:hover .hover-img{
+    z-index: 1;
+} */
+
 .heart{
     position: absolute;
     right: 0;
@@ -77,7 +87,7 @@ a{
     opacity: 0;
 }
 
-.card:hover{
+.card:hover .heart{
     opacity: 1;
 }
 
@@ -90,9 +100,10 @@ a{
 }
 
 /* quando la card è in hover applica questo  */
-/* .card:hover img{
+/* img:hover{
    display: none;
    background-image: url(../img/1b.webp);
+   width: 100%;
 } */
 
 /* card position relative + :hover con z-ind:1 */
