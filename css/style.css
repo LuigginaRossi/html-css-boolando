@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cost{
+    color: #ff0000;
+}
+span{
+    text-decoration: line-through;
+    color: black;
+}
+
 header{
     background-color: #ff6900 ;
     color: white;
     position: fixed;
     font-size: 1rem;
     padding: 0.5rem 0;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -117,6 +131,7 @@ a{
 footer{
     background-color: #1a1a1a;
     color: white;
+    padding: 1rem 0;
 }
 
 .container-info-leg{
