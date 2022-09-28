@@ -52,12 +52,47 @@ a{
 
 .card img{
     width: 100%;
-
 }
 
+.container-img{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.3rem;
+}
+
+.heart{
+    position: absolute;
+    right: 0;
+    top: 4%;
+    background-color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.discount{
+    background-color: #ff0000;
+}
+.sustainable{
+    background-color: #008000;
+    left: 16%;
+}
 
 /* quando la card è in hover applica questo  */
 /* .card:hover img{
    display: none;
    background-image: url(../img/1b.webp);
 } */
+
+/* card position relative + :hover con z-ind:1 */
